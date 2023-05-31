@@ -6,3 +6,7 @@ export interface IPokemonListProps {
 export interface IPokemonListContainer {
   arrowButtonColor: string;
 }
+
+export interface IFormSubmissionValues {
+  pokemonInput: string;
+}

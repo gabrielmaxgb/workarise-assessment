@@ -15,4 +15,10 @@ export const PokemonListContainer = styled.div<IPokemonListContainer>`
     border-radius: 8px;
     cursor: pointer;
   }
+
+  #form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
