@@ -19,11 +19,10 @@ const Welcome = () => {
         linearGradientColor={theme.palette.common.black}
       >
         <Grid item container xs={12}>
-          <Grid item container xs={6}></Grid>
           <Grid
             item
             container
-            xs={6}
+            xs={12}
             justifyContent={"center"}
             alignItems={"center"}
             className="action-area"

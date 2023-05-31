@@ -30,7 +30,7 @@ const TodosList = () => {
         md={8}
       >
         <Button
-          variant="outlined"
+          variant="contained"
           sx={{ margin: "1rem 0" }}
           onClick={() => setTodoFormOpen(true)}
         >

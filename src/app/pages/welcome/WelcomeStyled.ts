@@ -14,15 +14,14 @@ export const WelcomeContainer = styled.main<IWelcomeContainer>`
   .action-area {
     opacity: 0;
     background-image: ${(props) =>
-      `linear-gradient(to right, transparent, ${
-        props.linearGradientColor || "black"
-      })`};
+      `linear-gradient(transparent, ${props.linearGradientColor || "black"})`};
     transition: 1s;
 
     &:hover {
+      transition: 1s;
       opacity: 1;
       background-image: ${(props) =>
-        `linear-gradient(to right, transparent, ${
+        `linear-gradient(transparent, ${
           props.linearGradientColor || "black"
         })`};
     }

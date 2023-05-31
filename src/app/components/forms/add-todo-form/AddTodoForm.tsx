@@ -61,14 +61,18 @@ const AddTodoForm = ({
         initialValues={{
           todoDescription: currentTodo
             ? currentTodo.todoDescription
-            : "Type here your new task",
+            : "Type here your new todo",
         }}
         onSubmit={handleFormSubmtion}
       >
         {(props) => {
           return (
             <FormContainer onSubmit={props.handleSubmit}>
+              <label htmlFor="todo-description">
+                <Typography>Todo description:</Typography>
+              </label>
               <InputField
+                id="todo-description"
                 textColor={theme.palette.primary.main}
                 type="text"
                 onChange={props.handleChange}
@@ -80,10 +84,12 @@ const AddTodoForm = ({
                 <div id="feedback">{props.errors.todoDescription}</div>
               )}
               <Button
+                size="large"
+                variant="contained"
                 disabled={
                   pokemonSelected === "" ||
                   props.values.todoDescription === "" ||
-                  props.values.todoDescription === "Type here your new task"
+                  props.values.todoDescription === "Type here your new todo"
                 }
                 type="submit"
               >
@@ -94,6 +100,7 @@ const AddTodoForm = ({
                   variant="contained"
                   color="error"
                   onClick={() => handleDeleteTodo()}
+                  sx={{ marginTop: "1rem" }}
                 >
                   Delete todo
                 </Button>

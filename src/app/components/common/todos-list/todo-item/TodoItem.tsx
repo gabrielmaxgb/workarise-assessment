@@ -17,13 +17,19 @@ const TodoItem = ({ todo, todos, setTodos }: ITodoItemProps) => {
         borderColor={theme.palette.primary.main}
         onClick={() => setTodoFormOpen(true)}
       >
-        <Typography margin={"1rem 0"} variant="h3">
+        <Typography margin={"1rem 0"} variant="body1" fontSize={"1.5rem"}>
           {todo.todoDescription}
         </Typography>
-        <Typography margin={"1rem 0"} variant="h5">
-          -
+        <Typography margin={"1rem 0"} variant="body1" fontSize={"1.5rem"}>
+          &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
         </Typography>
-        <Typography margin={"1rem 0"} variant="h5">
+        <Typography
+          id="pokemon-chip"
+          margin={"1rem 0"}
+          variant="body1"
+          color={theme.extraColors.black}
+          fontSize={"1.5rem"}
+        >
           {todo.pokemon}
         </Typography>
       </TodoItemContainer>
