@@ -32,8 +32,6 @@ const PokemonList = ({
   const [actionButtonLoading, setActionButtonLoading] =
     useState<boolean>(false);
 
-  console.log("pokemonInputData", pokemonInputData);
-
   useEffect(() => {
     (async () => {
       setGetDataLoading(true);
@@ -44,7 +42,6 @@ const PokemonList = ({
         // `${BASE_URL}/pokemon/?limit=${md ? 3 : 5}`
         `${BASE_URL}/pokemon/${endpoint}`
       );
-      console.log("resp pokemonData", pokemonDataResponse);
       if (pokemonInput) {
         if (pokemonDataResponse?.id) {
           setPokemonInputData(pokemonDataResponse);
@@ -66,7 +63,6 @@ const PokemonList = ({
 
   const renderPokemonItems = useCallback(() => {
     const r = pokemonData?.results?.map((pokemon: any) => {
-      console.log("briga pokemon", pokemon);
       return (
         <PokemonItem
           key={pokemon.name}
@@ -96,7 +92,6 @@ const PokemonList = ({
   };
 
   const handleFormSubmtion = (values: IFormSubmissionValues) => {
-    console.log("handle submit values", values.pokemonInput.toLowerCase());
     setPokemonInput(values.pokemonInput.toLowerCase());
   };
 

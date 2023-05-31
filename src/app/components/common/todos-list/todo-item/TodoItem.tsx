@@ -9,8 +9,6 @@ const TodoItem = ({ todo, todos, setTodos }: ITodoItemProps) => {
   const theme = useTheme();
   const [isTodoFormOpen, setTodoFormOpen] = useState<boolean>(false);
 
-  console.log("TODOITEM", todos);
-
   return (
     <>
       <TodoItemContainer
