@@ -3,6 +3,11 @@ Workarise todo list pokemon Project
 
 This is a React Vite project that allows you to make requests to a pokemon API, create, edit and delete todo's from a list
 
+Deployment
+-------------
+
+https://workarise-assessment.web.app
+
 Project Setup
 -------------
 
