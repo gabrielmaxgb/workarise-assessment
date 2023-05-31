@@ -1,8 +1,7 @@
-import { Button, Typography, useTheme } from "@mui/material";
+import { Button, useTheme } from "@mui/material";
 import { TodosListContainer } from "./TododsListStyled";
 import { useCallback, useState } from "react";
 import Modal from "../modal/Modal";
-import { Formik, Form } from "formik";
 import AddTodoForm from "../../forms/add-todo-form/AddTodoForm.tsx";
 import { ITodos } from "../../forms/add-todo-form/types.ts";
 import TodoItem from "./todo-item/TodoItem.tsx";

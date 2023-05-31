@@ -13,6 +13,8 @@ export const TodoItemContainer = styled.div<ITodoItemContainerStyled>`
   border-radius: 8px;
   box-sizing: border-box;
   cursor: pointer;
+  max-height: 100px;
+  overflow-y: auto;
 
   #pokemon-chip {
     padding: 0 0.5rem;

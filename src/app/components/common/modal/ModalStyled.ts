@@ -6,6 +6,7 @@ export const ModalContent = styled(Box)<IModalContentStyled>`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   position: absolute;
   top: 50%;

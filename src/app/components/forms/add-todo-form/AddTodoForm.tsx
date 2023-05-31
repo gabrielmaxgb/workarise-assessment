@@ -1,10 +1,11 @@
-import { Button, TextField, Typography, useTheme } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import { Button, Typography, useTheme } from "@mui/material";
+import { useEffect, useState } from "react";
 import PokemonList from "../../common/pokemon-list/PokemonList";
-import { Formik, useFormik } from "formik";
-import { FormContainer, InputField } from "./AddTodoFormStyled";
+import { Formik } from "formik";
+import { FormContainer } from "./AddTodoFormStyled";
 import { v4 as uuidv4 } from "uuid";
-import { IAddTodoFormProps, IFormSubmissionValues, ITodos } from "./types";
+import { IAddTodoFormProps, IFormSubmissionValues } from "./types";
+import { InputField } from "../FormFieldsStyled";
 
 const AddTodoForm = ({
   currentTodo,
@@ -39,7 +40,6 @@ const AddTodoForm = ({
           pokemon: pokemonSelected,
         },
       ];
-      console.log("updatedTodos", updatedTodos);
       setTodos(updatedTodos);
       setTodoFormOpen(false);
     }
